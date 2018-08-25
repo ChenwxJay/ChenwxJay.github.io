@@ -5,9 +5,9 @@
   <subtitle>点灯工程师</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://chenwxjay.github.io/"/>
   <updated>2018-08-25T15:26:05.818Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://chenwxjay.github.io/</id>
   
   <author>
     <name>陈伟兴</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello,MyBlog</title>
-    <link href="http://yoursite.com/2018/08/25/Hello-MyBlog/"/>
-    <id>http://yoursite.com/2018/08/25/Hello-MyBlog/</id>
+    <link href="http://chenwxjay.github.io/2018/08/25/Hello-MyBlog/"/>
+    <id>http://chenwxjay.github.io/2018/08/25/Hello-MyBlog/</id>
     <published>2018-08-25T15:26:05.000Z</published>
     <updated>2018-08-25T15:26:05.818Z</updated>
     
@@ -32,8 +32,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/08/25/hello-world/"/>
-    <id>http://yoursite.com/2018/08/25/hello-world/</id>
+    <link href="http://chenwxjay.github.io/2018/08/25/hello-world/"/>
+    <id>http://chenwxjay.github.io/2018/08/25/hello-world/</id>
     <published>2018-08-25T14:37:36.069Z</published>
     <updated>2018-08-25T14:37:36.069Z</updated>
     
