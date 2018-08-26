@@ -1,354 +1,873 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#33363b">
-    <meta name="msapplication-TileColor" content="#33363b">
-    
-    
-    
-    <meta name="keywords" content="Code, ARIA, Hexo">
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    
-    
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
-    
-    
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    
-    
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    
-    
-    <link rel="alternate" href="/atom.xml" title="Chewx_Jay" type="application/atom+xml" />
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
-    
-    
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
-    
-    
-<link rel="stylesheet" type="text/css" href="/css/page.css">
-<link rel="stylesheet" type="text/css" href="/css/post.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
-    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script defer type="text/javascript" src="/js/util.js"></script>
-    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
-    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
-    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Chenwx_Jay" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Chewx_Jay" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="面向对象面向君，不负代码不负卿">
+<meta name="keywords" content="个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chewx_Jay">
+<meta property="og:url" content="http://chenwxjay.github.io/index.html">
+<meta property="og:site_name" content="Chewx_Jay">
+<meta property="og:description" content="面向对象面向君，不负代码不负卿">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chewx_Jay">
+<meta name="twitter:description" content="面向对象面向君，不负代码不负卿">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://chenwxjay.github.io/"/>
+
+
+
+
+
+  <title>Chewx_Jay</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
     
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
     
-    <script defer type="text/javascript" src="/js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      var searchPath = "search.xml";
-      if (searchPath.length === 0) {
-        searchPath = "search.xml";
-      }
-      var path = "/" + searchPath;
-      searchFunc(path, "search-input", "search-result");
-    });
-    </script>
-    
-    
-    <script defer type="text/javascript" src="/js/index.js"></script>
-    
-    <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>Chewx_Jay - 点灯工程师</title>
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
-    
-<header id="header" class="header" style="background: #33363b;">
-  <div class="container">
-    <div class="header-container">
-      <div class="header-title">
-        <h1 class="title"><a href="/">Chewx_Jay</a></h1>
-        <h2 class="subtitle">点灯工程师</h2>
-      </div>
-      
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Chewx_Jay</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <nav id="nav" class="nav">
-      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
-      <ul id="menu" role="menubar" aria-hidden="false">
-        
-        <li role="menuitem"><a href="/" class="current">首页</a></li>
-        
-        <li role="menuitem"><a href="/archives/">归档</a></li>
-        
-        <li role="menuitem"><a href="/categories/">分类</a></li>
-        
-        <li role="menuitem"><a href="/tags/">标签</a></li>
-        
-        <li role="menuitem"><a href="/about/">关于</a></li>
-        
-      </ul>
-    </nav>
+      
+        <p class="site-subtitle">CS萌新</p>
+      
   </div>
-</header>
 
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
 
     <main id="main" class="main">
-      <div class="container">
-        <div class="main-container">
-          <div class="content">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chenwxjay.github.io/2018/08/26/malloc和new的区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="陈伟兴">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chewx_Jay">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/26/malloc和new的区别/" itemprop="url">malloc和new的区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-26T21:51:58+08:00">
+                2018-08-26
+              </time>
             
 
-<div id="index" class="index page">
-  
-  <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://chenwxjay.github.io/2018/08/26/malloc和new的区别/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="陈伟兴">
-        <meta itemprop="description" content="面向对象面向君，不负代码不负卿">
-        <meta itemprop="image" content="/images/kobe.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="Chewx_Jay">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/08/26/malloc和new的区别/" itemprop="url">malloc和new的区别</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-26T21:51:58+08:00">2018-08-26 21:51:58</time></span>
-        </span>
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <h3 id="malloc、free和new、delete的区别"><a href="#malloc、free和new、delete的区别" class="headerlink" title="malloc、free和new、delete的区别"></a>malloc、free和new、delete的区别</h3><h4 id="malloc-VS-new"><a href="#malloc-VS-new" class="headerlink" title="malloc VS   new"></a>malloc VS   new</h4><p>   上一篇博客我们分析了C标准库的内存分配和释放的函数malloc、free这两个函数，相信大家对动态内存分配和释放都有了一定的了解，这里我们再分析一下C++的动态内存分配。用过C++的都应该知道，new可以用来动态创建对象，在创建对象的过程中也分配了内存空间，那么，new和malloc的区别是什么呢？下面我们就来详细说一下。</p>
-<ul>
-<li>malloc是标准库的一个库函数，而new是C++语言的一个运算符，也是一个关键字，两者底层实现不同</li>
-<li>malloc使用时需要明确指出申请多少内存，由malloc的long型参数指出，而new运算符不用这么做，我们在使用new运算符时只需要指定申请的数据类型和元素的个数（数组），new运算符会自动计算需要申请多少内存。</li>
-<li>malloc申请成功返回一个void*类型的指针，指向所分配的内存，需要用户手动转换为所需的类  型，而new返回的是对应类型的指针。</li>
-<li>new运算符在为类对象或者结构体变量申请内存时会自动调用对应类或结构体的构造函数，对对象或结构体变量进行初始化，因此我们可以在new一个对象的时候顺便对对象或者结构体变量进行初始化，而malloc只是简单的分配内存，分配成功之后用户需自行利用memset函数进行初始化。</li>
-<li>malloc申请内存失败返回的是NULL指针，而new申请失败则直接抛出异常。<br>从上面我们可以看出，new和malloc存在着很大的区别，因此在实际编程时需要谨慎使用，根据实际情况选择合适的方式来动态申请内存。</li>
-</ul>
-<h4 id="free-VS-delete"><a href="#free-VS-delete" class="headerlink" title="free VS delete"></a>free VS delete</h4><p>  上面分析了malloc和new的区别，这里我们也顺便分析一下free和delete的区别吧。我们知道，free和delete都能够释放内存，那么它们不同之处是什么呢？请看下面分析：</p>
-<ul>
-<li>free是一个标准库函数，而delete是一个运算符，实现机制不同。</li>
-<li>free需要传入一个由malloc返回的有效指针，并且在使用时需要先判断该指针是否为NULL指针。</li>
-<li>delete使用时是先调用对应类对象的析构函数，再对类对象所占据的内存进行释放，而free只是简单地释放内存。</li>
-<li>delete有两种使用方式，一种是delete p(释放一个对象所占的内存)，另一种是delete []p(释放多个对象所占的内存)，而free只有一种函数调用形式。</li>
-<li>当然，它们也有相同之处，具体如下：</li>
-<li><p>delete和free都不能多次对同一块内存进行释放，否则会引起错误，但是可以重复释放NULL指针。</p>
-</li>
-<li><p>在对内存空间进行释放之后，不管是使用delete还是使用free，都需要将指向该内存空间的指针置空，防止出现野指针。</p>
-</li>
-</ul>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C/C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </main>
-    <footer class="post-footer">
       
-    </footer>
-  </article>
-  
-  <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://chenwxjay.github.io/2018/08/26/malloc和freee的使用/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="陈伟兴">
-        <meta itemprop="description" content="面向对象面向君，不负代码不负卿">
-        <meta itemprop="image" content="/images/kobe.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="Chewx_Jay">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/08/26/malloc和freee的使用/" itemprop="url">malloc和free的使用</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-26T21:34:08+08:00">2018-08-26 21:34:08</time></span>
-        </span>
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <h2 id="malloc和free使用"><a href="#malloc和free使用" class="headerlink" title="malloc和free使用"></a>malloc和free使用</h2><h3 id="基本定义和函数原型"><a href="#基本定义和函数原型" class="headerlink" title="基本定义和函数原型"></a>基本定义和函数原型</h3><h4 id="基本定义"><a href="#基本定义" class="headerlink" title="基本定义"></a>基本定义</h4><p>  学习C/C++的都或多或少听说过malloc和free这两个函数吧，这两个函数是C/C++语言中用于<strong>动态分配内存和释放</strong>的函数，malloc可以向操作系统申请一定量的内存，具体申请多大的内存由参数指定，而free则是用来释放由malloc申请到的内存。malloc动态申请的内存主要来自于进程地址空间的堆区，每个进程在创建并运行的过程中，操作系统会为其分配地址空间，这个地址空间是虚拟地址空间，在32位Linux系统中一般是4GB，其中3GB是用户地址空间，1GB是内核空间，malloc申请的内存空间位于用户地址空间中的堆区。由于C/C++不支持自动垃圾回收机制，所以由malloc动态申请的内存必须由用户自己释放（归还给进程或者操作系统），在程序中我们可以使用free函数来实现对内存的回收。</p>
-<h4 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h4><p>   malloc和free函数的原型定义在C标准库的stdlib.h头文件中，要使用这两个函数必须先包含这个头文件，否则编译会出错，在C++程序中一般是写成<code>#include&lt;cstdlib&gt;</code>。</p>
-<p>  malloc原型 <br></p>
-<figure class="hljs highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span>* <span class="title">malloc</span><span class="params">(<span class="keyword">long</span> size)</span></span>;</span><br></pre></td></tr></table></figure>
-<p>  free原型 <br></p>
-<figure class="hljs highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">free</span><span class="params">(<span class="keyword">void</span> * pointer)</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="使用实例"><a href="#使用实例" class="headerlink" title="使用实例 "></a>使用实例 <br></h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">int main()&#123;</span><br><span class="line">    char *p;</span><br><span class="line">    p=(char*)malloc(10);</span><br><span class="line">    if(p == NULL) //必须判断是否分配成功</span><br><span class="line">       cout &lt;&lt; &quot;Not enougth memory&quot; &lt;&lt; endl;</span><br><span class="line">    else</span><br><span class="line">       cout &lt;&lt; &quot;allocated at&quot; &lt;&lt; p &lt;&lt; endl</span><br><span class="line">    //此处可以进行对已分配内存的操作</span><br><span class="line">    if(p!=NULL)&#123;</span><br><span class="line">        free(p); //回收内存</span><br><span class="line">        p = NULL; //注意要让指针置空，防止出现野指针</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>   从上述代码可以看出，malloc在分配内存时如果成功返回的是一个无类型指针，在使用之前需要对其进行强制类型转换，并且在分配之后需要对指针进行判空。在程序结束时，我们需要手动使用free函数进行释放，并且需要将指针变量设置为空指针，防止出现野指针而引起程序崩溃。</p>
-<h3 id="使用陷阱"><a href="#使用陷阱" class="headerlink" title="使用陷阱"></a>使用陷阱</h3><ul>
-<li>malloc和free函数应该配对使用，有分配就一定有释放，否则会造成内存泄漏，并且对某块内存只能释放一次，如果释放多次会使程序运行出错，从而引起程序崩溃，因此在程序中禁止对已经释放过的内存进行释放。</li>
-<li>当申请的内存不再需要时，应该对其进行释放，释放之后应该要将指向该内存的所有指针置空，防止出现野指针。并且，已经释放的内存不能再次被访问，除非被重新分配，否则会引起段错误。</li>
-<li>malloc 申请内存可能会失败，在使用之前必须先检查是否可用，避免访问NULL指针而引起错误。</li>
-</ul>
 
       
-    </main>
+        
+          
+          malloc、free和new、delete的区别malloc VS   new   上一篇博客我们分析了C标准库的内存分配和释放的函数malloc、free这两个函数，相信大家对动态内存分配和释放都有了一定的了解，这里我们再分析一下C++的动态内存分配。用过C++的都应该知道，new可以用来动态创
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/26/malloc和new的区别/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
     <footer class="post-footer">
       
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
     </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
-</div>
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chenwxjay.github.io/2018/08/26/malloc和freee的使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="陈伟兴">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chewx_Jay">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/26/malloc和freee的使用/" itemprop="url">malloc和free的使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-26T21:34:08+08:00">
+                2018-08-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C/C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          malloc和free使用基本定义和函数原型基本定义  学习C/C++的都或多或少听说过malloc和free这两个函数吧，这两个函数是C/C++语言中用于动态分配内存和释放的函数，malloc可以向操作系统申请一定量的内存，具体申请多大的内存由参数指定，而free则是用来释放由malloc申请到的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/26/malloc和freee的使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
 
           </div>
           
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/timg.jpg"
+                alt="陈伟兴" />
+            
+              <p class="site-author-name" itemprop="name">陈伟兴</p>
+              <p class="site-description motion-element" itemprop="description">面向对象面向君，不负代码不负卿</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ChenwxJay" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="chenwxjay@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
           
           
-<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
     </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="/images/kobe.jpg" alt="陈伟兴">
-  
-  <h1 class="author-name">陈伟兴</h1>
-  <h2 class="author-description">面向对象面向君，不负代码不负卿</h2>
-  <div class="site-count">
-    
-    <div class="archives-count">
-      <div class="site-count-title">归档</div>
-      <div><a href="/archives/">2</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="categories-count">
-      <div class="site-count-title">分类</div>
-      <div><a href="/categories/">0</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="tags-count">
-      <div class="site-count-title">标签</div>
-      <div><a href="/tags/">0</a></div>
-    </div>
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">陈伟兴</span>
+
   
 </div>
 
+<!--
 
-  <div class="sidebar-sticky">
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+-->
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
     
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
-    <hr>
-    <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>社交链接</p></div>
-      <ul>
-        
-        <li><i class="fas fa-envelope"></i><a href="chenwx_jay@163.com" target="_blank">E-Mail</a></li>
-        
-        <li><i class="fab fa-github"></i><a href="https://github.com/ChenwxJay" target="_blank">GitHub</a></li>
-        
-      </ul>
-    </div>
+
     
-    
-    <hr>
-    <div class="blogroll sidebar-item">
-      <div><i class="fas fa-link"></i>友情链接</div>
-      <ul>
-        
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
-        
-        <li><i class="fas fa-link"></i><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
-        
-        <li><i class="fas fa-link"></i><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
-        
-      </ul>
-    </div>
-    
+
   </div>
-</aside>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
-          
-        </div>
-      </div>
-    </main>
-    
-<footer id="footer" class="footer" style="background: #33363b;">
-  <div class="container">
-    <div class="back-to-top">
-      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
-    </div>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="copyright">
-          <span class="author">陈伟兴</span><span class="year"><i class="far fa-copyright"></i>2018 - 2018</span>
-        </div>
-        
-      </div>
-      <div class="footer-right">
-        <div class="custom-info">
-          
-          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-          
-        </div>
-        <div class="powered-by">
-          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 
-  </body>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
 </html>
