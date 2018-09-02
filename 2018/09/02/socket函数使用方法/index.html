@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Chewx_Jay">
 <meta property="og:description" content="Socket原理及创建   在Linux网络编程模型中，套接字（Socket）用来表示一个网络连接，可以是TCP连接，也可以是UDP连接，在网络通信过程中不管是写数据还是读数据都要通过Socket来完成，因此Socket是网络通信中非常重要的一个工具。下面我们来分析一下Socket的工作原理和创建的过程。 原理说明   在Linux系统中，Socket可以作为一种进程间通信的机制，可以用于不同主机">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-02T06:39:46.704Z">
+<meta property="og:updated_time" content="2018-09-02T06:47:35.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="socket函数使用方法">
 <meta name="twitter:description" content="Socket原理及创建   在Linux网络编程模型中，套接字（Socket）用来表示一个网络连接，可以是TCP连接，也可以是UDP连接，在网络通信过程中不管是写数据还是读数据都要通过Socket来完成，因此Socket是网络通信中非常重要的一个工具。下面我们来分析一下Socket的工作原理和创建的过程。 原理说明   在Linux系统中，Socket可以作为一种进程间通信的机制，可以用于不同主机">
@@ -371,10 +371,8 @@
 <ul>
 <li><p><strong>domain参数</strong><br> 该参数表示创建Socket所使用的协议域，也称为协议族，协议族决定了socket的地址类型，在通信中必须采用对应的地址。该参数的可能取值如下所示：</p>
 <p> | domain参数可能取值 | 取值的含义                 |<br> | :—————-: | ————————– |<br> |      AF_INET       | 表示使用IPV4协议           |<br> |      AF_INET6      | 表示使用IPV6协议           |<br> |      AF_UNIX       | 表示只在本机内通信的套接字 |</p>
+<p> 通常我们设置该参数为AF_INET,表示使用IPV4协议进行通信，AF_INET本质上是内核源码中定义的一个宏<code>#define AF_INET 2</code>,正好与上面函数原型指定的int类型。</p>
 </li>
-</ul>
-<p>   通常我们设置该参数为AF_INET,表示使用IPV4协议进行通信，AF_INET本质上是内核源码中定义的一个宏<code>#define AF_INET 2</code>,正好与上面函数原型指定的int类型。</p>
-<ul>
 <li><p><strong>type参数</strong></p>
 <p>type参数指定套接字的具体类型，该参数决定了Socket的类型，可能取值如下所示：</p>
 </li>
@@ -461,6 +459,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/09/02/bind函数使用/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -540,7 +542,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
