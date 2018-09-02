@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="面向对象面向君，不负代码不负卿">
+<meta name="description" content="移动语义：1.用于移动构造函数，即参数必须声明为右值引用在移动构造函数中，没有使用到新资源的分配如new，而是将资源进行移动，如指针指向的内存，然后将原指针置空移动比拷贝块2.移动赋值运算符：接收一个右值引用变量，返回一个左值引用大概工作流程：释放this指针所指向的资源，然后指向右值引用对应的资源，然后将右值引用对应临时对象的指针置空，最后把原对象返回，完成资源的移动在C++ 11中，对vect">
 <meta name="keywords" content="个人博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://chenwxjay.github.io/tags/index.html">
+<meta property="og:title" content="Chewx_Jay">
+<meta property="og:url" content="http://chenwxjay.github.io/temp_blogs/C++复习1.html">
 <meta property="og:site_name" content="Chewx_Jay">
-<meta property="og:description" content="面向对象面向君，不负代码不负卿">
+<meta property="og:description" content="移动语义：1.用于移动构造函数，即参数必须声明为右值引用在移动构造函数中，没有使用到新资源的分配如new，而是将资源进行移动，如指针指向的内存，然后将原指针置空移动比拷贝块2.移动赋值运算符：接收一个右值引用变量，返回一个左值引用大概工作流程：释放this指针所指向的资源，然后指向右值引用对应的资源，然后将右值引用对应临时对象的指针置空，最后把原对象返回，完成资源的移动在C++ 11中，对vect">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-26T15:29:06.234Z">
+<meta property="og:updated_time" content="2018-08-27T13:53:16.527Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="面向对象面向君，不负代码不负卿">
+<meta name="twitter:title" content="Chewx_Jay">
+<meta name="twitter:description" content="移动语义：1.用于移动构造函数，即参数必须声明为右值引用在移动构造函数中，没有使用到新资源的分配如new，而是将资源进行移动，如指针指向的内存，然后将原指针置空移动比拷贝块2.移动赋值运算符：接收一个右值引用变量，返回一个左值引用大概工作流程：释放this指针所指向的资源，然后指向右值引用对应的资源，然后将右值引用对应临时对象的指针置空，最后把原对象返回，完成资源的移动在C++ 11中，对vect">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://chenwxjay.github.io/tags/"/>
+  <link rel="canonical" href="http://chenwxjay.github.io/temp_blogs/C++复习1.html"/>
 
 
 
 
 
-  <title>tags | Chewx_Jay</title>
+  <title> | Chewx_Jay</title>
   
 
 
@@ -258,7 +258,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
+	<h1 class="post-title" itemprop="name headline"></h1>
 
 
 
@@ -270,14 +270,10 @@
       <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 2 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/C-C/" style="font-size: 30px; color: #111">C/C++</a> <a href="/tags/Socket/" style="font-size: 12px; color: #ccc">Socket</a>
-            </div>
-          </div>
+          <p>移动语义：<br>1.用于移动构造函数，即参数必须声明为右值引用<br>在移动构造函数中，没有使用到新资源的分配如new，而是将资源进行移动，如指针指向的内存，然后将原指针置空<br>移动比拷贝块<br>2.移动赋值运算符：接收一个右值引用变量，返回一个左值引用<br>大概工作流程：释放this指针所指向的资源，然后指向右值引用对应的资源，然后将右值引用对应临时对象的指针置空，最后把原对象返回，完成资源的移动<br>在C++ 11中，对vector做了优化，vector的插入有两种版本，一种参数是const T&amp;，一种参数是<br>T&amp;&amp; ,第二种是接收右值引用<br>一般来说，当传入一个有名对象时抵用第一种，传入一个匿名对象时（临时对象）使用第二种<br>可以利用static_cast将一个有名对象转为右值引用<br>static_cast&lt;T&amp;&amp;&gt; obj -&gt; 静态类型转换<br>或者使用 move函数来实现转换  std:move(obj)</p>
+<p>ulimit -c 设置core文件的大小 设置为0或者太小，不会产生core文件<br>使用ulimit  -c unlimited来设置无限大，则任意情况下都会产生core文件<br>可以 后接  unlimited表示设置无限大，任何情况下都会产生core文件<br>coredump文件时指核心转储文件<br>字符串常量保存在常量区，不能用free去释放，一旦释放就会产生段错误，产生core dumped</p>
+<p>查找算法：二分查找，时间复杂度 O(logn)，顺序查找<br>unordered_set  无序集合容器，唯一值，可以实现快速检索</p>
+
         
       </div>
       

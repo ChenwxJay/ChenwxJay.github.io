@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="C/C++," />
+  <meta name="keywords" content="Socket," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="malloc和free使用基本定义和函数原型基本定义  学习C/C++的都或多或少听说过malloc和free这两个函数吧，这两个函数是C/C++语言中用于动态分配内存和释放的函数，malloc可以向操作系统申请一定量的内存，具体申请多大的内存由参数指定，而free则是用来释放由malloc申请到的内存。malloc动态申请的内存主要来自于进程地址空间的堆区，每个进程在创建并运行的过程中，操作系统">
-<meta name="keywords" content="C&#x2F;C++">
+<meta name="description" content="Socket原理及创建   在Linux网络编程模型中，套接字（Socket）用来表示一个网络连接，可以是TCP连接，也可以是UDP连接，在网络通信过程中不管是写数据还是读数据都要通过Socket来完成，因此Socket是网络通信中非常重要的一个工具。下面我们来分析一下Socket的工作原理和创建的过程。 原理说明   在Linux系统中，Socket可以作为一种进程间通信的机制，可以用于不同主机">
+<meta name="keywords" content="Socket">
 <meta property="og:type" content="article">
-<meta property="og:title" content="malloc和free的使用">
-<meta property="og:url" content="http://chenwxjay.github.io/2018/08/26/malloc和freee的使用/index.html">
+<meta property="og:title" content="socket函数使用方法">
+<meta property="og:url" content="http://chenwxjay.github.io/2018/09/02/socket函数使用方法/index.html">
 <meta property="og:site_name" content="Chewx_Jay">
-<meta property="og:description" content="malloc和free使用基本定义和函数原型基本定义  学习C/C++的都或多或少听说过malloc和free这两个函数吧，这两个函数是C/C++语言中用于动态分配内存和释放的函数，malloc可以向操作系统申请一定量的内存，具体申请多大的内存由参数指定，而free则是用来释放由malloc申请到的内存。malloc动态申请的内存主要来自于进程地址空间的堆区，每个进程在创建并运行的过程中，操作系统">
+<meta property="og:description" content="Socket原理及创建   在Linux网络编程模型中，套接字（Socket）用来表示一个网络连接，可以是TCP连接，也可以是UDP连接，在网络通信过程中不管是写数据还是读数据都要通过Socket来完成，因此Socket是网络通信中非常重要的一个工具。下面我们来分析一下Socket的工作原理和创建的过程。 原理说明   在Linux系统中，Socket可以作为一种进程间通信的机制，可以用于不同主机">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-26T16:43:25.887Z">
+<meta property="og:updated_time" content="2018-09-02T06:29:25.367Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="malloc和free的使用">
-<meta name="twitter:description" content="malloc和free使用基本定义和函数原型基本定义  学习C/C++的都或多或少听说过malloc和free这两个函数吧，这两个函数是C/C++语言中用于动态分配内存和释放的函数，malloc可以向操作系统申请一定量的内存，具体申请多大的内存由参数指定，而free则是用来释放由malloc申请到的内存。malloc动态申请的内存主要来自于进程地址空间的堆区，每个进程在创建并运行的过程中，操作系统">
+<meta name="twitter:title" content="socket函数使用方法">
+<meta name="twitter:description" content="Socket原理及创建   在Linux网络编程模型中，套接字（Socket）用来表示一个网络连接，可以是TCP连接，也可以是UDP连接，在网络通信过程中不管是写数据还是读数据都要通过Socket来完成，因此Socket是网络通信中非常重要的一个工具。下面我们来分析一下Socket的工作原理和创建的过程。 原理说明   在Linux系统中，Socket可以作为一种进程间通信的机制，可以用于不同主机">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://chenwxjay.github.io/2018/08/26/malloc和freee的使用/"/>
+  <link rel="canonical" href="http://chenwxjay.github.io/2018/09/02/socket函数使用方法/"/>
 
 
 
 
 
-  <title>malloc和free的使用 | Chewx_Jay</title>
+  <title>socket函数使用方法 | Chewx_Jay</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chenwxjay.github.io/2018/08/26/malloc和freee的使用/">
+    <link itemprop="mainEntityOfPage" href="http://chenwxjay.github.io/2018/09/02/socket函数使用方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈伟兴">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">malloc和free的使用</h1>
+          <h1 class="post-title" itemprop="name headline">socket函数使用方法</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-26T21:34:08+08:00">
-                2018-08-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-02T13:17:08+08:00">
+                2018-09-02
               </time>
             
 
@@ -304,28 +304,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-C/" itemprop="url" rel="index">
-                    <span itemprop="name">C/C++</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -354,19 +332,93 @@
       
 
       
-        <h2 id="malloc和free使用"><a href="#malloc和free使用" class="headerlink" title="malloc和free使用"></a>malloc和free使用</h2><h3 id="基本定义和函数原型"><a href="#基本定义和函数原型" class="headerlink" title="基本定义和函数原型"></a>基本定义和函数原型</h3><h4 id="基本定义"><a href="#基本定义" class="headerlink" title="基本定义"></a>基本定义</h4><p>  学习C/C++的都或多或少听说过malloc和free这两个函数吧，这两个函数是C/C++语言中用于<strong>动态分配内存和释放</strong>的函数，malloc可以向操作系统申请一定量的内存，具体申请多大的内存由参数指定，而free则是用来释放由malloc申请到的内存。malloc动态申请的内存主要来自于进程地址空间的堆区，每个进程在创建并运行的过程中，操作系统会为其分配地址空间，这个地址空间是虚拟地址空间，在32位Linux系统中一般是4GB，其中3GB是用户地址空间，1GB是内核空间，malloc申请的内存空间位于用户地址空间中的堆区。由于C/C++不支持自动垃圾回收机制，所以由malloc动态申请的内存必须由用户自己释放（归还给进程或者操作系统），在程序中我们可以使用free函数来实现对内存的回收。</p>
-<h4 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h4><p>   malloc和free函数的原型定义在C标准库的stdlib.h头文件中，要使用这两个函数必须先包含这个头文件，否则编译会出错，在C++程序中一般是写成<code>#include&lt;cstdlib&gt;</code>。</p>
-<p>  malloc原型 <br></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span>* <span class="title">malloc</span><span class="params">(<span class="keyword">long</span> size)</span></span>;</span><br></pre></td></tr></table></figure>
-<p>  free原型 <br></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">free</span><span class="params">(<span class="keyword">void</span> * pointer)</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="使用实例"><a href="#使用实例" class="headerlink" title="使用实例 "></a>使用实例 <br></h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *p;</span><br><span class="line">    p=(<span class="keyword">char</span>*)<span class="built_in">malloc</span>(<span class="number">10</span>);</span><br><span class="line">    <span class="keyword">if</span>(p == <span class="literal">NULL</span>) <span class="comment">//必须判断是否分配成功</span></span><br><span class="line">       <span class="built_in">cout</span> &lt;&lt; <span class="string">"Not enougth memory"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">       <span class="built_in">cout</span> &lt;&lt; <span class="string">"allocated at"</span> &lt;&lt; p &lt;&lt; <span class="built_in">endl</span></span><br><span class="line">    <span class="comment">//此处可以进行对已分配内存的操作</span></span><br><span class="line">    <span class="keyword">if</span>(p!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">        <span class="built_in">free</span>(p); <span class="comment">//回收内存</span></span><br><span class="line">        p = <span class="literal">NULL</span>; <span class="comment">//注意要让指针置空，防止出现野指针</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>从上述代码可以看出，malloc在分配内存时如果成功返回的是一个无类型指针，在使用之前需要对其进行强制类型转换，并且在分配之后需要对指针进行判空。在程序结束时，我们需要手动使用free函数进行释放，并且需要将指针变量设置为空指针，防止出现野指针而引起程序崩溃。</p>
-<h3 id="使用陷阱"><a href="#使用陷阱" class="headerlink" title="使用陷阱"></a>使用陷阱</h3><ul>
-<li>malloc和free函数应该配对使用，有分配就一定有释放，否则会造成内存泄漏，并且对某块内存只能释放一次，如果释放多次会使程序运行出错，从而引起程序崩溃，因此在程序中禁止对已经释放过的内存进行释放。</li>
-<li>当申请的内存不再需要时，应该对其进行释放，释放之后应该要将指向该内存的所有指针置空，防止出现野指针。并且，已经释放的内存不能再次被访问，除非被重新分配，否则会引起段错误。</li>
-<li>malloc 申请内存可能会失败，在使用之前必须先检查是否可用，避免访问NULL指针而引起错误。</li>
+        <h3 id="Socket原理及创建"><a href="#Socket原理及创建" class="headerlink" title="Socket原理及创建"></a>Socket原理及创建</h3><p>   在Linux网络编程模型中，套接字（Socket）用来表示一个网络连接，可以是TCP连接，也可以是UDP连接，在网络通信过程中不管是写数据还是读数据都要通过Socket来完成，因此Socket是网络通信中非常重要的一个工具。下面我们来分析一下Socket的工作原理和创建的过程。</p>
+<h4 id="原理说明"><a href="#原理说明" class="headerlink" title="原理说明"></a>原理说明</h4><p>   在Linux系统中，Socket可以作为一种进程间通信的机制，可以用于不同主机的不同进程之间的通信和数据交换。Linux内核为这一机制提供了一组应用程序接口（API），称为套接字接口（socket API）。应用程序可以通过套接字接口，来使用网络套接字，以进行数据交换。Socket在程序中可以用一个封装好的结构体类型来表示，该结构体主要包含了下面的五个字段：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Socket结构体字段</th>
+<th>字段的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">使用的协议族</td>
+<td>可以选择TCP、UDP、本地通信等</td>
+</tr>
+<tr>
+<td style="text-align:center">本机IP地址</td>
+<td>用于表示本机地址</td>
+</tr>
+<tr>
+<td style="text-align:center">本机端口</td>
+<td>用于表示本机参与通信的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">远程服务器IP地址</td>
+<td>用于表示远程服务器</td>
+</tr>
+<tr>
+<td style="text-align:center">远程服务器端口</td>
+<td>用于表示远程服务器参与通信的进程</td>
+</tr>
+</tbody>
+</table>
+<p>   在套接字接口中，以<strong>IP地址及通信端口</strong>组成套接字地址。远程的套接字地址，以及本地的套接字地址完成连接后，再加上使用的协议，这个五元组，作为套接字对，之后就可以彼此交换数据。</p>
+<h4 id="Socket的创建"><a href="#Socket的创建" class="headerlink" title="Socket的创建"></a>Socket的创建</h4><p>   在实际通信过程中，不管是客户端还是服务器都需要先初始化一个套接字，然后再进行后续操作，Linux内核提供的Socket API中有一个socket函数可以完成这件事，其函数原型如下所示：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">socket</span><span class="params">(<span class="keyword">int</span> domain,<span class="keyword">int</span> type,<span class="keyword">int</span> protocol)</span></span>;<span class="comment">//用于创建Socket实例</span></span><br></pre></td></tr></table></figure>
+<p>   该函数有三个参数，均为int类型，但是它们有各自的含义，下面我们针对这三个参数进行分析：</p>
+<ul>
+<li><p><strong>domain参数</strong><br> 该参数表示创建Socket所使用的协议域，也称为协议族，协议族决定了socket的地址类型，在通信中必须采用对应的地址。该参数的可能取值如下所示：</p>
+<p> | domain参数可能取值 |         取值的含义         |<br> | —————— | :————————: |<br> | AF_INET            |      表示使用IPV4协议      |<br> | AF_INET6           |      表示使用IPV6协议      |<br> | AF_UNIX            | 表示只在本机内通信的套接字 |</p>
+<p> 通常我们设置该参数为AF_INET,表示使用IPV4协议进行通信，AF_INET本质上是内核源码中定义的一个宏<code>#define AF_INET 2</code>,正好与上面函数原型指定的int类型。</p>
+</li>
+<li><p><strong>type参数</strong></p>
+<p>type参数指定套接字的具体类型，该参数决定了Socket的类型，可能取值如下所示：</p>
+</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">type参数可能取值</th>
+<th>取值的具体含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SOCK_DGRAM</td>
+<td>创建UDP数据报套接字，使用不连续不可靠的连接</td>
+</tr>
+<tr>
+<td style="text-align:center">SOCK_STREAM</td>
+<td>创建TCP流套接字，使用稳定可靠的连接</td>
+</tr>
+<tr>
+<td style="text-align:center">SOCK_RAW</td>
+<td>创建原始套接字。提供原始网络协议存取</td>
+</tr>
+<tr>
+<td style="text-align:center">SOCK_PACKET</td>
+<td>与网络驱动程序直接通信</td>
+</tr>
+<tr>
+<td style="text-align:center">SOCK_SEQPACKET</td>
+<td>提供连续可靠的数据包连接</td>
+</tr>
+<tr>
+<td style="text-align:center">SOCK_RDM</td>
+<td>提供可靠的数据包连接</td>
+</tr>
+</tbody>
+</table>
+<p>  在实际编程时，我们可以根据自己的需要指定其中一个参数来选择创建的Socket类型。</p>
+<ul>
+<li><strong>protocol参数</strong><br> protocol参数指定了Socket所使用的协议，常用的字段有:IPPROTO_TCP、IPPTOTO_UDP、IPPROTO_SCTP、IPPROTO_TIPC等，它们分别对应TCP传输协议、UDP传输协议、STCP传输协议、TIPC传输协议。通常情况下设置为0，通过参数domain指定的协议族和参数type指定套接字类型来确定参数。当创建原始套接字，系统无法惟一的协议，这时候就要使用该参数来指定协议。</li>
+</ul>
+<h4 id="注意：并不是上面的type和protocol可以随意组合的，如SOCK-STREAM不可以跟IPPROTO-UDP组合。当protocol为0时，会自动选择type类型对应的默认协议。"><a href="#注意：并不是上面的type和protocol可以随意组合的，如SOCK-STREAM不可以跟IPPROTO-UDP组合。当protocol为0时，会自动选择type类型对应的默认协议。" class="headerlink" title="注意：并不是上面的type和protocol可以随意组合的，如SOCK_STREAM不可以跟IPPROTO_UDP组合。当protocol为0时，会自动选择type类型对应的默认协议。"></a><strong>注意：并不是上面的type和protocol可以随意组合的，如SOCK_STREAM不可以跟IPPROTO_UDP组合。当protocol为0时，会自动选择type类型对应的默认协议。</strong></h4><h4 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h4><p>   使用该函数需要在程序中包含两个头文件，如下所示</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/socket.h&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>  该函数返回一个int类型的值，如果函数执行成功则返回一个大于0的数，表示一个套接字描述符，可以用来索引一个套接字（类似于文件描述符），在后续的操作中可以使用该描述符来查找套接字并对其进行操作。如果函数执行失败，则返回-1。</p>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="https://blog.csdn.net/bian_qing_quan11/article/details/71713647" target="_blank" rel="noopener">https://blog.csdn.net/bian_qing_quan11/article/details/71713647</a></p>
 
       
     </div>
@@ -384,7 +436,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C-C/" rel="tag"># C/C++</a>
+            <a href="/tags/Socket/" rel="tag"># Socket</a>
           
         </div>
       
@@ -397,15 +449,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/09/02/epoll的定义/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/26/malloc和new的区别/" rel="prev" title="malloc和new的区别">
-                malloc和new的区别 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -564,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#malloc和free使用"><span class="nav-number">1.</span> <span class="nav-text">malloc和free使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本定义和函数原型"><span class="nav-number">1.1.</span> <span class="nav-text">基本定义和函数原型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本定义"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数原型"><span class="nav-number">1.1.2.</span> <span class="nav-text">函数原型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用实例"><span class="nav-number">1.2.</span> <span class="nav-text">使用实例 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用陷阱"><span class="nav-number">1.3.</span> <span class="nav-text">使用陷阱</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Socket原理及创建"><span class="nav-number">1.</span> <span class="nav-text">Socket原理及创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理说明"><span class="nav-number">1.1.</span> <span class="nav-text">原理说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Socket的创建"><span class="nav-number">1.2.</span> <span class="nav-text">Socket的创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意：并不是上面的type和protocol可以随意组合的，如SOCK-STREAM不可以跟IPPROTO-UDP组合。当protocol为0时，会自动选择type类型对应的默认协议。"><span class="nav-number">1.3.</span> <span class="nav-text">注意：并不是上面的type和protocol可以随意组合的，如SOCK_STREAM不可以跟IPPROTO_UDP组合。当protocol为0时，会自动选择type类型对应的默认协议。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数的使用"><span class="nav-number">1.4.</span> <span class="nav-text">函数的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文章"><span class="nav-number">1.5.</span> <span class="nav-text">参考文章</span></a></li></ol></li></ol></div>
             
 
           </div>
